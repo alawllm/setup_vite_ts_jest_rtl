@@ -1,15 +1,15 @@
-import Sum from "./sum";
+import sum from "./sum";
 
 describe("#sum", () => {
   it("returns 0 with no numbers", () => {
-    expect(Sum()).toBe(0);
+    expect(sum()).toBe(0);
   });
 
   it("returns same number with one number", () => {
-    expect(Sum(2)).toBe(2);
+    expect(sum(2)).toBe(2);
   });
 
   it("returns sum with multiple numbers", () => {
-    expect(Sum(1, 2, 3)).toBe(6);
+    expect(sum(1, 2, 3)).toBe(6);
   });
 });
